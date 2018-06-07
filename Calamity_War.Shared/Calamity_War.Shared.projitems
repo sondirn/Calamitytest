@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>518b036c-95d5-421e-985a-35a1a08858f7</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Calamity_War</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Systems\CollisionSystem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Systems\EnemyAISystem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Systems\GameModeSystem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Systems\TileRenderSystem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\Direction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\EnemyType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\GameModes.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\Global.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Calamity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\Input.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Handler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Managers\Utils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Managers\ContentManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Managers\InputManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Managers\WindowManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Systems\ActorGenerationSystem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Systems\ActorHandlingSystem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Systems\ActorPlayerControlSystem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Systems\ActorRenderSystem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Systems\CameraSystem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Systems\System.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Systems\SystemHolder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\InputData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\IntRef.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\QuadTree.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\State.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)World\Actors\Actor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)World\Actors\Components\IComponent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)World\Actors\Components\ActorPool.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)World\Actors\Components\Component.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)World\Actors\Components\ComponentCollection\Camera.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)World\Actors\Components\ComponentCollection\EnemyAI.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)World\Actors\Components\ComponentCollection\PlayerController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)World\Actors\Components\ComponentCollection\Sprite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)World\Actors\Components\ComponentCollection\Physics.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)World\Actors\Components\ComponentCollection\StateComponent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)World\Actors\Components\ComponentData\CameraData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)World\Actors\Components\ComponentData\EnemyAIData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)World\Actors\Components\ComponentData\PhysicsData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)World\Actors\Components\ComponentData\PlayerControllerData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)World\Actors\Components\ComponentData\SpriteData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)World\Actors\Components\ComponentData\StateData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)World\Actors\Components\IComponentOwner.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)World\Tiles\Tile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)World\Tiles\TileData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Scene\" />
+    <Folder Include="$(MSBuildThisFileDirectory)World\Map\" />
+  </ItemGroup>
+</Project>
