@@ -1,0 +1,386 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{59044188-020C-411C-9512-036F6979A162}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>CalamityGame</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Calamity_War.Content\AnimationTest.png" />
+    <Content Include="Calamity_War.Content\Calamity_War.Content.csproj" />
+    <Content Include="Calamity_War.Content\obj\x86\Debug\Calamity_War.Content.csproj.FileListAbsolute.txt" />
+    <Content Include="Calamity_War.Content\Textures\DefaultTexture.png" />
+    <Content Include="Calamity_War.Shared\Calamity_War.Shared.shproj.user" />
+    <Content Include="Calamity_War.Windows\bin\Windows\x86\Debug\Calamity_War.Windows.exe" />
+    <Content Include="Calamity_War.Windows\bin\Windows\x86\Debug\Calamity_War.Windows.pdb" />
+    <Content Include="Calamity_War.Windows\bin\Windows\x86\Debug\MonoGame.Extended.dll" />
+    <Content Include="Calamity_War.Windows\bin\Windows\x86\Debug\MonoGame.Extended.pdb" />
+    <Content Include="Calamity_War.Windows\bin\Windows\x86\Debug\MonoGame.Framework.dll" />
+    <Content Include="Calamity_War.Windows\bin\Windows\x86\Debug\MonoGame.Framework.xml" />
+    <Content Include="Calamity_War.Windows\bin\Windows\x86\Debug\Newtonsoft.Json.dll" />
+    <Content Include="Calamity_War.Windows\bin\Windows\x86\Debug\Newtonsoft.Json.xml" />
+    <Content Include="Calamity_War.Windows\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll" />
+    <Content Include="Calamity_War.Windows\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml" />
+    <Content Include="Calamity_War.Windows\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll" />
+    <Content Include="Calamity_War.Windows\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml" />
+    <Content Include="Calamity_War.Windows\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll" />
+    <Content Include="Calamity_War.Windows\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml" />
+    <Content Include="Calamity_War.Windows\bin\Windows\x86\Debug\SharpDX.dll" />
+    <Content Include="Calamity_War.Windows\bin\Windows\x86\Debug\SharpDX.DXGI.dll" />
+    <Content Include="Calamity_War.Windows\bin\Windows\x86\Debug\SharpDX.DXGI.xml" />
+    <Content Include="Calamity_War.Windows\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll" />
+    <Content Include="Calamity_War.Windows\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml" />
+    <Content Include="Calamity_War.Windows\bin\Windows\x86\Debug\SharpDX.XAudio2.dll" />
+    <Content Include="Calamity_War.Windows\bin\Windows\x86\Debug\SharpDX.XAudio2.xml" />
+    <Content Include="Calamity_War.Windows\bin\Windows\x86\Debug\SharpDX.XInput.dll" />
+    <Content Include="Calamity_War.Windows\bin\Windows\x86\Debug\SharpDX.XInput.xml" />
+    <Content Include="Calamity_War.Windows\bin\Windows\x86\Debug\SharpDX.xml" />
+    <Content Include="Calamity_War.Windows\Calamity_War.Windows.csproj" />
+    <Content Include="Calamity_War.Windows\Icon.ico" />
+    <Content Include="Calamity_War.Windows\obj\x86\Debug\Calamity_War.Windows.csproj.FileListAbsolute.txt" />
+    <Content Include="Calamity_War.Windows\obj\x86\Debug\Calamity_War.Windows.exe" />
+    <Content Include="Calamity_War.Windows\obj\x86\Debug\Calamity_War.Windows.pdb" />
+    <Content Include="packages\MonoGame.Extended.1.0.617\lib\portable-net45+win8+wpa81\MonoGame.Extended.dll" />
+    <Content Include="packages\MonoGame.Extended.1.0.617\lib\portable-net45+win8+wpa81\MonoGame.Extended.pdb" />
+    <Content Include="packages\MonoGame.Extended.1.0.617\readme.txt" />
+    <Content Include="packages\MonoGame.Extended.Content.Pipeline.1.0.617\readme.txt" />
+    <Content Include="packages\MonoGame.Extended.Content.Pipeline.1.0.617\tools\MonoGame.Extended.Content.Pipeline.dll" />
+    <Content Include="packages\MonoGame.Extended.Content.Pipeline.1.0.617\tools\MonoGame.Extended.dll" />
+    <Content Include="packages\MonoGame.Extended.Content.Pipeline.1.0.617\tools\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.9.0.1\lib\net20\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.9.0.1\lib\net20\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.9.0.1\lib\net35\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.9.0.1\lib\net35\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.9.0.1\lib\net40\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.9.0.1\lib\net40\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.9.0.1\lib\netstandard1.0\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.9.0.1\lib\netstandard1.0\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.9.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.9.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.xml" />
+    <Content Include="TODO.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".git\COMMIT_EDITMSG" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\FETCH_HEAD" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\master" />
+    <None Include=".git\objects\01\3ea847a1445bff12fe96999a2bdc9c9362d62a" />
+    <None Include=".git\objects\02\317d10edf136dfa2fd5a39d34eb156a2a36433" />
+    <None Include=".git\objects\02\74f8e25d693b31f2507ee9f6d2349ae7da4651" />
+    <None Include=".git\objects\03\eb2eafabac0afbcda6080e2ba34cf78ccd367c" />
+    <None Include=".git\objects\03\ec99a51f077dbe60e199733bd7cb02eaa841df" />
+    <None Include=".git\objects\04\29ef1b599357a147521e9e9f3cd5abe4727a32" />
+    <None Include=".git\objects\04\e1d821f2235736b37af50039c160daa5e72ff3" />
+    <None Include=".git\objects\05\2e00e02d39a6760ee92fcec56f411e1a042ad1" />
+    <None Include=".git\objects\07\c56ac1ca03b7345bb5d8eb49b869e7867b7a10" />
+    <None Include=".git\objects\08\19986e0d678f4369ba4139b26c3ae170113376" />
+    <None Include=".git\objects\08\99027726958dafb683a6763ee20f4984a7bc25" />
+    <None Include=".git\objects\0a\820497f1d7f049c74cd7a908df9998866b2503" />
+    <None Include=".git\objects\0a\f970b2eabe5ed66fbde62271300efab9050d09" />
+    <None Include=".git\objects\0b\a40f58792fda635581f26a8c811e90392f7fc3" />
+    <None Include=".git\objects\0c\454a28638d98924c23dd85e3dca6dddcb3b8be" />
+    <None Include=".git\objects\0c\ebb5e8e9f897170124f6ce8bd439e7f85eca97" />
+    <None Include=".git\objects\10\f7527f74cf7665c6279e56b6ee349bff07ead3" />
+    <None Include=".git\objects\11\16dc613daf218ae41c287507a79999d02061f5" />
+    <None Include=".git\objects\13\edc4afa8f5f9cdb06b538156df2a386b456300" />
+    <None Include=".git\objects\18\141443a082cf5c8326e3840fd44b2ed0ce52f0" />
+    <None Include=".git\objects\18\b4de00ef43a34a607f791d33a7be77e992b8dc" />
+    <None Include=".git\objects\19\df0647b3c4ab3a31a61906dc4b0c8c8da1a12d" />
+    <None Include=".git\objects\1b\d5e3fc3125a18f727fdb805ab795ff6b812af0" />
+    <None Include=".git\objects\1e\d20a065230cdf4cc20cc6f6df0e050cbde9400" />
+    <None Include=".git\objects\1f\f0c423042b46cb1d617b81efb715defbe8054d" />
+    <None Include=".git\objects\20\dae627a5338a8b707f983990019ea9dabd680e" />
+    <None Include=".git\objects\20\db7c8f37ecc9ef89bbca947cbe0b9b9af0f54d" />
+    <None Include=".git\objects\20\e9f1b27cb75dbd61dc8547fd440f06f4e1ca7d" />
+    <None Include=".git\objects\21\5f05dcbe4e5a58b3d6fadc42a1e5169392592c" />
+    <None Include=".git\objects\25\6479b962370761f4d4f5ec6a0009aaa02e1ae2" />
+    <None Include=".git\objects\2d\82d012d06c2407efcf9e5759a02fcaeb01d72e" />
+    <None Include=".git\objects\31\5f918c319df6184a600a1acb2270e49a9d7a68" />
+    <None Include=".git\objects\32\3c37fc2263e6f2a0040c1293fcd51dbc5db3f3" />
+    <None Include=".git\objects\32\63f146bf3a6ddf1d06592d429324d60629ebb1" />
+    <None Include=".git\objects\32\dae0a2626fdb4f01f1aaa8bc3ba1d773d8cf5e" />
+    <None Include=".git\objects\32\f087cf63a2142d71cc44fe5c6a6060d47605fc" />
+    <None Include=".git\objects\32\fcf0360489ac9da56df12ce6c8b64eb65d7ede" />
+    <None Include=".git\objects\33\6b9ef9d2405f3c7e8afac1ccd676286f3ae817" />
+    <None Include=".git\objects\37\482d3a660150bb2c6cf59849ce687c47146163" />
+    <None Include=".git\objects\3b\224aa94481a4420cb4e0d442bcf5e9c3b89804" />
+    <None Include=".git\objects\3b\29f76fd4cbfb90fae26977e5b59247fddfd76b" />
+    <None Include=".git\objects\3c\4efe206bd0e7230ad0ae8396a3c883c8207906" />
+    <None Include=".git\objects\3c\af3d7dc5cd8d21fb3900fc4c8d3de44ed54324" />
+    <None Include=".git\objects\3d\7a6dfae4b22a4928b87b0b06be29c8a309c862" />
+    <None Include=".git\objects\3e\5d210060690753270509a62a399f70345a82b8" />
+    <None Include=".git\objects\42\669b080e1baacf568b273132170328285a9e06" />
+    <None Include=".git\objects\46\066381402eb700f766068c5c34a29144d4d01e" />
+    <None Include=".git\objects\46\77750f81560bc5f07d1e36f5577618ff2ee6f5" />
+    <None Include=".git\objects\47\dc1d3dbd317a9428e213be150fdae860933b6d" />
+    <None Include=".git\objects\49\15c63fbbd8f5045190d1489c689dd4ffb67697" />
+    <None Include=".git\objects\4a\fdcb5a78e65f2b8d49e5496d9e6d0d1ca4e7a8" />
+    <None Include=".git\objects\4b\d52700efe9ec2293498bcff6939d9710fc2388" />
+    <None Include=".git\objects\4c\34388369115a2bfdfee9059d4b43faba9bc6ac" />
+    <None Include=".git\objects\4c\60524f62a248faa69c5a4b472e5573a8f430e1" />
+    <None Include=".git\objects\4c\79bd50beb13386b66e51b9ca464a1db44fb63f" />
+    <None Include=".git\objects\4f\8ffcfe216da5b8cb59e356c6aff2dc02d7ce32" />
+    <None Include=".git\objects\50\9f45d7405305a6ea8a5280d30514c3f24acc8a" />
+    <None Include=".git\objects\51\77201069eef97bdb0afa0fe318fb17a3f3e627" />
+    <None Include=".git\objects\52\9d5486f7198db7bd01382d9e3618f08f6c14af" />
+    <None Include=".git\objects\52\af00e783cdb8372738cbc39f7059f8b4bc90f3" />
+    <None Include=".git\objects\54\312243964b342ae23075e01abfa5a37b875044" />
+    <None Include=".git\objects\54\c6d4fd935ad5a9007e2c03870a41bea64caa92" />
+    <None Include=".git\objects\54\f1cdaf0346811231e84b96757fb87162e1190c" />
+    <None Include=".git\objects\56\8d7bf348e1f64a7a8fa399e9c806fbe0356658" />
+    <None Include=".git\objects\57\47116c4bbaa9ef895e1819afa71a650c561cb3" />
+    <None Include=".git\objects\57\eaa00e6a013daed52778d82304f872a9d813ea" />
+    <None Include=".git\objects\5c\50f453b246dbabcfb437c6535d3e2b4910c594" />
+    <None Include=".git\objects\5f\2336e6c247bf1a1a2f0e3916e5b392e4cac6da" />
+    <None Include=".git\objects\5f\dcb5347db3eaf3a4f6928136a3614127fd0315" />
+    <None Include=".git\objects\62\49ba13360e45ac40d92f1f785d77fed59be804" />
+    <None Include=".git\objects\64\0405834b23771e24c088264521481cb6e95c17" />
+    <None Include=".git\objects\64\875e007ba140f7bc08666380e5ff6d3efc1bcf" />
+    <None Include=".git\objects\65\400efd44fc4e8339a59417b985a6963a88adf9" />
+    <None Include=".git\objects\65\eb2f0b666b63dceebf6ac8e857c5d42e2cba95" />
+    <None Include=".git\objects\66\c55f658a580cb229f3510c4793510ad89401ec" />
+    <None Include=".git\objects\67\0609de9304d8fcac42305a040584a6d552604b" />
+    <None Include=".git\objects\69\b78ab30a82f7793777f219867824b6e81b131a" />
+    <None Include=".git\objects\6a\0f71a8d8c6f58505405258e8d8ee2e1da994d3" />
+    <None Include=".git\objects\6a\5f353e94bad3cd12caffc3a3956b2e5b6bfb96" />
+    <None Include=".git\objects\6c\fc2ff7138a5bef0bf8dfd217c485f7a6bb0758" />
+    <None Include=".git\objects\6f\da0fd038b7ae6225af48c9a6ec33cba89028c8" />
+    <None Include=".git\objects\70\67e44775c04a78b5aa9250276b2d1567c404de" />
+    <None Include=".git\objects\70\c85980c5f4df610c213e4164aaddd490a1fc2c" />
+    <None Include=".git\objects\76\c45fee7fbcca87feaca9adefaf1d7c9b9ab6bd" />
+    <None Include=".git\objects\78\8a88586737cf20169a2d8f75147b2dddbc86b4" />
+    <None Include=".git\objects\7a\201b57d1f4784a18841fee6883d429d7dbae78" />
+    <None Include=".git\objects\7a\5179b799d96c8997cd9fd2543005e5c11227f9" />
+    <None Include=".git\objects\7d\9dec18704053ee43cd7c956022ddbdb34d8de1" />
+    <None Include=".git\objects\81\67b3a7b6e2a9b43d90e2935d23d5286a4bd25e" />
+    <None Include=".git\objects\82\8927481e01ee3f7c78e6486f40c7742f10777c" />
+    <None Include=".git\objects\83\6391285b0506ca5fc57b7c92299ac2076e9c2d" />
+    <None Include=".git\objects\83\862cfc46bbc7f0d87d102128d7924317007a81" />
+    <None Include=".git\objects\84\705571d6fe9637cf46b068ce818532626540d1" />
+    <None Include=".git\objects\87\746445f3e8dcd28d913eccc34dcf5a6a4294c4" />
+    <None Include=".git\objects\87\abe13b4807a1716742fc03d3950392cb6c2876" />
+    <None Include=".git\objects\89\86db7fd7c84f0823e01a1aad7a6a393a939798" />
+    <None Include=".git\objects\8a\65f9719aad8133139e9f05ef1a759f12290df0" />
+    <None Include=".git\objects\8c\58236e5d303305996f61f3598006f7e09a266a" />
+    <None Include=".git\objects\8e\c6665957a62d2d5f4890d5750b168f611baabe" />
+    <None Include=".git\objects\91\e3470e1645e6e8d0de6fe9f6b242f366e9a393" />
+    <None Include=".git\objects\92\9863ff67ca6920e36d80340c46f173cd79958e" />
+    <None Include=".git\objects\92\fba0f1ea4c23b4d8ccb27e3d6c33154c42702e" />
+    <None Include=".git\objects\94\e2a6f5ff0c24693a464f95423705d33393ec52" />
+    <None Include=".git\objects\96\07d93af3e9e5f78a8fbd83ebc5177fc9ea0b87" />
+    <None Include=".git\objects\97\7ce41e85ddea592a13e1a9451b7a0742202c80" />
+    <None Include=".git\objects\98\12ead247acb9ef278e0fcd8a8bf85e6e2a1d36" />
+    <None Include=".git\objects\98\5df8dd176b096173ed147539dc9305cbf699ed" />
+    <None Include=".git\objects\99\09d459c53b2ccff7c309b621e5242d0859dd91" />
+    <None Include=".git\objects\9a\1d8347c0c1e5da94e6bedf5da0aab7064a1efa" />
+    <None Include=".git\objects\9b\a9e0ac490f06a5145dd162bf25771b8c390b12" />
+    <None Include=".git\objects\9f\2309187f4c7bf394469906e3d1de1917e0d414" />
+    <None Include=".git\objects\a0\7984f64c8da2cf60382b9b7c6624cf24edf426" />
+    <None Include=".git\objects\a1\590af8c201d9001719da7d3a252aadbba0260c" />
+    <None Include=".git\objects\a1\d053bed168618aece067c39f5d5c88f397eaf3" />
+    <None Include=".git\objects\a3\3185686b5eb77408b5fbe1ab11f95d401914ee" />
+    <None Include=".git\objects\a3\5314425856432858344937df7df149657cbf81" />
+    <None Include=".git\objects\a3\7447ac8240fe96d1454515874a80bc4d1a50f6" />
+    <None Include=".git\objects\a4\f72f732cbb063ffdc047c3db8da6ae6e7a70f8" />
+    <None Include=".git\objects\a6\c508082641eb201f5da57dba1a08106e9b3305" />
+    <None Include=".git\objects\a8\1964d316650f76ed99669b5da0ff780a9b38fc" />
+    <None Include=".git\objects\aa\8293231208e70aca4616cc6730943527558be9" />
+    <None Include=".git\objects\aa\97a37aa48dd9889073f1586a634fe054f41cc8" />
+    <None Include=".git\objects\ac\581b9d31b3b3d8bf83a5182361553a45bb0056" />
+    <None Include=".git\objects\ac\b5886144641083201926c2ac53e4d755dd6473" />
+    <None Include=".git\objects\ad\d4bc3a8b30f8a75a83221da91656cd1d9017b1" />
+    <None Include=".git\objects\b1\5b61e9e6f6cf5d3e6b8f138e077a97881b9d9a" />
+    <None Include=".git\objects\b3\90e581d7a2d561d39c885d825c62a14946afda" />
+    <None Include=".git\objects\b5\5fc2364c8ce9382da7f8b9d85e5f1390e1b3b5" />
+    <None Include=".git\objects\b6\f1b545b9fce1dd5682678223c7d42fe916bc90" />
+    <None Include=".git\objects\ba\f24173ca1a70b3c845967bfc1ed86ed309b6b7" />
+    <None Include=".git\objects\bc\6f6df71345eb02ca143c4eeaf493ac13ba7096" />
+    <None Include=".git\objects\be\6558d2d48b3c254ec4adb2aae004597b832cac" />
+    <None Include=".git\objects\c0\472b6e97081f145040bbe30d29c06a37ca5e3f" />
+    <None Include=".git\objects\c2\a2577b3a72ab5f6392f4c2eb219b42c29da058" />
+    <None Include=".git\objects\c5\0c58ea64fad55efe1cd452aa95d9c43b9edecf" />
+    <None Include=".git\objects\c5\26eaeb67df9739478a8213977f81754ac07306" />
+    <None Include=".git\objects\c6\2b1922c4252fda9f0e9cf6158a60e63ce0dbc6" />
+    <None Include=".git\objects\c6\e6dee2c6ed6fe26c98ffee94d2948869e866ef" />
+    <None Include=".git\objects\c7\19433cf97508eae626adbbeced8023687de2af" />
+    <None Include=".git\objects\c9\187f86f3b60de90141c36f930be8692c43b1a2" />
+    <None Include=".git\objects\cb\630026d8801646424c48e76c1f03cf8cacf2f7" />
+    <None Include=".git\objects\cd\03a6bd805833a564f4543dfebda0419d2d1428" />
+    <None Include=".git\objects\ce\1bca8551fe4e27b5441f445335166f36c6e6f4" />
+    <None Include=".git\objects\ce\3698c8939fd08183a3a27f06bd1da0c264f356" />
+    <None Include=".git\objects\ce\c41426e038aa0a327bc6269a67f4daf0c76fc8" />
+    <None Include=".git\objects\cf\3d2dba31feece8bf2a1d7c155ac1bd7a6d0735" />
+    <None Include=".git\objects\d2\dc0cd940caeee13a565e560152ec71d0fb82ef" />
+    <None Include=".git\objects\d5\7d9d4cc3e3f472c8d04000bf423c7995dbd6e5" />
+    <None Include=".git\objects\d9\0fc91389e82a4af057a7cb0f28d0002eefd07e" />
+    <None Include=".git\objects\d9\dc879169617db858fc2b404bcb1291036048f0" />
+    <None Include=".git\objects\d9\f9b88390d6ecda3c65c72d36bfcd23f1d4e1bf" />
+    <None Include=".git\objects\da\710b5c827d233098553edf1703b5d974c8bcac" />
+    <None Include=".git\objects\da\87f0455bd0bfbc672c990cf14f52508b8b2d7a" />
+    <None Include=".git\objects\dc\5ce9aeabda886885ee1b70966790d66d2ff00d" />
+    <None Include=".git\objects\e2\109775f68820d7cc73995e356c9ec066a9834c" />
+    <None Include=".git\objects\e2\56041ca7abe0b210786e40e99843be765b4e10" />
+    <None Include=".git\objects\e2\ce60f8df4214ad5916dcd3ab223f4ef28ba6cc" />
+    <None Include=".git\objects\e6\9de29bb2d1d6434b8b29ae775ad8c2e48c5391" />
+    <None Include=".git\objects\e7\ad107b8ce115e16f647f379ab588557bfd714b" />
+    <None Include=".git\objects\e7\cd371706be7fc50b3f62f8da7e5e9530d0fe06" />
+    <None Include=".git\objects\e8\252d62145f1b9c926ef5b7e71000f90d1d2be4" />
+    <None Include=".git\objects\e9\cebccc7f5e95dedd4c09f3f5d986c8db705979" />
+    <None Include=".git\objects\ec\ffc1a99adfb867bdbd5fd0a722183658a916e7" />
+    <None Include=".git\objects\f0\581577ca1cafdbe76aab0d4650b358b0af526e" />
+    <None Include=".git\objects\f1\4bd636d138a4d7ec2d745bc3ee0c79a601e139" />
+    <None Include=".git\objects\f2\477251e6369f3202721c48290021fa0e3f8490" />
+    <None Include=".git\objects\f2\5a641f2edfd68560cca49273a51207a87e68ec" />
+    <None Include=".git\objects\f3\7febfab83fec86eb9045a162a54d149e8e4488" />
+    <None Include=".git\objects\f5\482e71db73548c6951dccbd3d7fedad753736e" />
+    <None Include=".git\objects\fb\4d125adc7b3d099cd05d6b05f6552135cf151e" />
+    <None Include=".git\objects\fe\7e60448db805d500c276d1e0c037065839e583" />
+    <None Include=".git\ORIG_HEAD" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\master" />
+    <None Include=".vs\Calamity_War\v15\.suo" />
+    <None Include=".vs\Calamity_War\v15\Server\sqlite3\db.lock" />
+    <None Include=".vs\Calamity_War\v15\Server\sqlite3\storage.ide" />
+    <None Include="Calamity_War.Content\bin\Windows\AnimationTest.xnb" />
+    <None Include="Calamity_War.Content\bin\Windows\Textures\DefaultTexture.xnb" />
+    <None Include="Calamity_War.Content\Content.mgcb" />
+    <None Include="Calamity_War.Content\Content\bin\Windows\AnimationTest.xnb" />
+    <None Include="Calamity_War.Content\Content\bin\Windows\Textures\DefaultTexture.xnb" />
+    <None Include="Calamity_War.Content\Content\obj\Windows\.mgcontent" />
+    <None Include="Calamity_War.Content\Content\obj\Windows\AnimationTest.mgcontent" />
+    <None Include="Calamity_War.Content\Content\obj\Windows\Textures\DefaultTexture.mgcontent" />
+    <None Include="Calamity_War.Content\obj\Windows\.mgcontent" />
+    <None Include="Calamity_War.Content\obj\Windows\AnimationTest.mgcontent" />
+    <None Include="Calamity_War.Content\obj\Windows\Textures\DefaultTexture.mgcontent" />
+    <None Include="Calamity_War.Content\obj\x86\Debug\Calamity_War.Content.csproj.CoreCompileInputs.cache" />
+    <None Include="Calamity_War.Content\obj\x86\Debug\Calamity_War.Content.csprojAssemblyReference.cache" />
+    <None Include="Calamity_War.Content\obj\x86\Debug\Calamity_War.Content.csprojResolveAssemblyReference.cache" />
+    <None Include="Calamity_War.Content\obj\x86\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Calamity_War.Content\packages.config" />
+    <None Include="Calamity_War.Shared\Calamity_War.Shared.projitems" />
+    <None Include="Calamity_War.Shared\Calamity_War.Shared.shproj" />
+    <None Include="Calamity_War.Windows\app.manifest" />
+    <None Include="Calamity_War.Windows\bin\Windows\x86\Debug\Content\AnimationTest.xnb" />
+    <None Include="Calamity_War.Windows\bin\Windows\x86\Debug\Content\Textures\DefaultTexture.xnb" />
+    <None Include="Calamity_War.Windows\Content\bin\Windows\AnimationTest.xnb" />
+    <None Include="Calamity_War.Windows\Content\bin\Windows\Textures\DefaultTexture.xnb" />
+    <None Include="Calamity_War.Windows\Content\obj\Windows\.mgcontent" />
+    <None Include="Calamity_War.Windows\Content\obj\Windows\AnimationTest.mgcontent" />
+    <None Include="Calamity_War.Windows\Content\obj\Windows\Textures\DefaultTexture.mgcontent" />
+    <None Include="Calamity_War.Windows\obj\x86\Debug\Calamity_War.Windows.csproj.CopyComplete" />
+    <None Include="Calamity_War.Windows\obj\x86\Debug\Calamity_War.Windows.csproj.CoreCompileInputs.cache" />
+    <None Include="Calamity_War.Windows\obj\x86\Debug\Calamity_War.Windows.csprojAssemblyReference.cache" />
+    <None Include="Calamity_War.Windows\obj\x86\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Calamity_War.Windows\packages.config" />
+    <None Include="packages\MonoGame.Extended.1.0.617\MonoGame.Extended.1.0.617.nupkg" />
+    <None Include="packages\MonoGame.Extended.Content.Pipeline.1.0.617\MonoGame.Extended.Content.Pipeline.1.0.617.nupkg" />
+    <None Include="packages\Newtonsoft.Json.9.0.1\Newtonsoft.Json.9.0.1.nupkg" />
+    <None Include="packages\Newtonsoft.Json.9.0.1\tools\install.ps1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Calamity_War.Content\obj\x86\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="Calamity_War.Content\obj\x86\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="Calamity_War.Content\obj\x86\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Calamity_War.Content\Properties\AssemblyInfo.cs" />
+    <Compile Include="Calamity_War.Shared\Calamity.cs" />
+    <Compile Include="Calamity_War.Shared\Constants\Global.cs" />
+    <Compile Include="Calamity_War.Shared\Constants\Input.cs" />
+    <Compile Include="Calamity_War.Shared\Handler.cs" />
+    <Compile Include="Calamity_War.Shared\Managers\ContentManager.cs" />
+    <Compile Include="Calamity_War.Shared\Managers\InputManager.cs" />
+    <Compile Include="Calamity_War.Shared\Managers\WindowManager.cs" />
+    <Compile Include="Calamity_War.Shared\Systems\ActorGenerationSystem.cs" />
+    <Compile Include="Calamity_War.Shared\Systems\ActorHandlingSystem.cs" />
+    <Compile Include="Calamity_War.Shared\Systems\ActorRenderSystem.cs" />
+    <Compile Include="Calamity_War.Shared\Systems\System.cs" />
+    <Compile Include="Calamity_War.Shared\Systems\SystemHolder.cs" />
+    <Compile Include="Calamity_War.Shared\World\Actors\Actor.cs" />
+    <Compile Include="Calamity_War.Shared\World\Actors\Components\ActorPool.cs" />
+    <Compile Include="Calamity_War.Shared\World\Actors\Components\Component.cs" />
+    <Compile Include="Calamity_War.Shared\World\Actors\Components\ComponentCollection\BoundingBox.cs" />
+    <Compile Include="Calamity_War.Shared\World\Actors\Components\ComponentCollection\Physics.cs" />
+    <Compile Include="Calamity_War.Shared\World\Actors\Components\ComponentCollection\Sprite.cs" />
+    <Compile Include="Calamity_War.Shared\World\Actors\Components\ComponentData\BoundingBoxData.cs" />
+    <Compile Include="Calamity_War.Shared\World\Actors\Components\ComponentData\PhysicsData.cs" />
+    <Compile Include="Calamity_War.Shared\World\Actors\Components\ComponentData\SpriteData.cs" />
+    <Compile Include="Calamity_War.Shared\World\Actors\Components\IComponentOwner.cs" />
+    <Compile Include="Calamity_War.Windows\obj\x86\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="Calamity_War.Windows\obj\x86\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="Calamity_War.Windows\obj\x86\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Calamity_War.Windows\Program.cs" />
+    <Compile Include="Calamity_War.Windows\Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\objects\pack\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include="Calamity_War.Content\bin\Windows\x86\Debug\" />
+    <Folder Include="Calamity_War.Content\bin\Windows\x86\Release\" />
+    <Folder Include="Calamity_War.Content\obj\x86\Debug\TempPE\" />
+    <Folder Include="Calamity_War.Shared\Scene\" />
+    <Folder Include="Calamity_War.Shared\World\Map\" />
+    <Folder Include="Calamity_War.Windows\bin\Windows\x86\Release\" />
+    <Folder Include="Calamity_War.Windows\obj\x86\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
